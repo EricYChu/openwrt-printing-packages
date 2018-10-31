@@ -12,7 +12,7 @@ PKG_VERSION:=6.0
 PKG_RELEASE:=1
 PKG_SOURCE:=gnu-gs-fonts-other-$(PKG_VERSION).tar.gz
 PKG_SOURCE_URL:=@SF/gs-fonts
-PKG_MD5SUM:=33457d3f37de7ef03d2eea05a9e6aa4f
+PKG_HASH:=4cef38d05aa958dfee4dabb8d1599b8ad2b2347413b7895c94d8882c8a0fb9d3
 
 include $(INCLUDE_DIR)/package.mk
 
