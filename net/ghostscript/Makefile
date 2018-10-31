@@ -15,7 +15,7 @@ PKG_SOURCE_URL:=https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/d
 PKG_HASH:=baafa64740b090bff50b220a6df3be95c46069b7e30f4b4effed28316e5b2389
 
 #
-# HOST_BUILD_DEPENDS:=ghostscript/host zlib/host
+HOST_BUILD_DEPENDS:=ghostscript/host zlib/host
 PKG_BUILD_DEPENDS:=ghostscript/host zlib/host
 PKG_INSTALL:=1
 
