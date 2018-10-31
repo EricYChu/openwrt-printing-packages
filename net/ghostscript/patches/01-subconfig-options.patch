@@ -1,11 +1,14 @@
+diff --git a/configure b/configure
+index 681c2d1..43cbcbe 100644
 --- a/configure
 +++ b/configure
-@@ -4864,7 +4864,7 @@
- SUBCONFIG_OPTS=""
- 
- if test x$build_alias != x; then
--SUBCONFIG_OPTS="$SUBCONFIG_OPTS --build=$build_alias"
-+SUBCONFIG_OPTS="$SUBCONFIG_OPTS --build=$build_alias --host=$host_alias"
+@@ -6181,6 +6181,9 @@ fi
+
+ if test x"$host_alias" != x""; then
+   SUBCONFIG_OPTS="$SUBCONFIG_OPTS --host=$host_alias"
++  if test x"$build_alias" != x""; then
++    SUBCONFIG_OPTS="$SUBCONFIG_OPTS --build=$build_alias --host=$host_alias"
++  fi
  fi
- 
- 
+
+
