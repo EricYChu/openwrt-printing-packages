@@ -8,7 +8,7 @@ include $(TOPDIR)/rules.mk
 PKG_NAME:=ubuntu-font-family
 PKG_VERSION:=0.83
 PKG_RELEASE:=1
-PKG_SOURCE:=fa7939d-$(PKG_NAME)-$(PKG_VERSION).zip
+PKG_SOURCE:=fad7939d-$(PKG_NAME)-$(PKG_VERSION).zip
 PKG_SOURCE_URL:=https://assets.ubuntu.com/v1
 PKG_HASH:=456d7d42797febd0d7d4cf1b782a2e03680bb4a5ee43cc9d06bda172bac05b42
 
