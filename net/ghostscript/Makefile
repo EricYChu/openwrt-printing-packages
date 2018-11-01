@@ -103,11 +103,11 @@ define Package/ghostscript/install
 	$(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/lib
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/lib/* \
 		$(1)/usr/share/ghostscript/$(PKG_VERSION)/lib
-	$(CP) -r $(PKG_BUILD_DIR)/Resource $(1)/usr/share/ghostscript/$(PKG_VERSION)/
-	$(CP) -r $(PKG_BUILD_DIR)/iccprofiles $(1)/usr/share/ghostscript/$(PKG_VERSION)/
-	# $(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/examples/cjk
-	$(CP) -r $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/examples \
-	 	$(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
+	$(CP) $(PKG_BUILD_DIR)/Resource $(1)/usr/share/ghostscript/$(PKG_VERSION)/
+	$(CP) $(PKG_BUILD_DIR)/iccprofiles $(1)/usr/share/ghostscript/$(PKG_VERSION)/
+	$(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
+	$(CP) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/examples \
+		$(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
 	$(INSTALL_DIR) $(1)/etc/cups
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/etc/cups/gstoraster.convs $(1)/etc/cups
 endef
