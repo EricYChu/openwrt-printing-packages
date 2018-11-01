@@ -105,9 +105,9 @@ define Package/ghostscript/install
 		$(1)/usr/share/ghostscript/$(PKG_VERSION)/lib
 	$(CP) $(PKG_BUILD_DIR)/Resource $(1)/usr/share/ghostscript/$(PKG_VERSION)/
 	$(CP) $(PKG_BUILD_DIR)/iccprofiles $(1)/usr/share/ghostscript/$(PKG_VERSION)/
-	$(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
-	$(CP) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/examples \
-		$(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
+	# $(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
+	# $(CP) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/examples \
+	# 	$(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
 	$(INSTALL_DIR) $(1)/etc/cups
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/etc/cups/gstoraster.convs $(1)/etc/cups
 endef
