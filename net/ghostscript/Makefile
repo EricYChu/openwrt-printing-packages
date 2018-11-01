@@ -98,8 +98,8 @@ define Package/ghostscript/install
 	#--------------------------------------------------------------
 	#	$(INSTALL_DIR) $(1)/usr/lib/cups/filter
 	#	$(INSTALL_BIN) $(PKG_INSTALL_DIR)/usr/lib/cups/filter/* $(1)/usr/lib/cups/filter
-	$(INSTALL_DIR) $(1)/usr/share/cups/model
-	$(CP) -r $(PKG_INSTALL_DIR)/usr/share/cups/model $(1)/usr/share/cups/
+	#   $(INSTALL_DIR) $(1)/usr/share/cups/model
+	#   $(CP) $(PKG_INSTALL_DIR)/usr/share/cups/model $(1)/usr/share/cups/
 	$(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/lib
 	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/lib/* \
 		$(1)/usr/share/ghostscript/$(PKG_VERSION)/lib
