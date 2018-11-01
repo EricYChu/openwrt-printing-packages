@@ -11,25 +11,25 @@ index 261ce45..e9a15b9 100644
 
  $(PACKPS_XE): $(GLSRC)pack_ps.c $(stdpre_h) $(UNIX_AUX_MAK) $(MAKEDIRS)
 -	$(CCAUX_) $(I_)$(GLSRCDIR)$(_I) $(O_)$(PACKPS_XE) $(GLSRC)pack_ps.c $(AUXEXTRALIBS)
-+	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/echogs OPENWRT_PGK_BUILD_PATH/obj/aux/pack_ps
++	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/packps OPENWRT_PGK_BUILD_PATH/obj/aux/packps
 
  # On the RS/6000 (at least), compiling genarch.c with gcc with -O
  # produces a buggy executable.
  $(GENARCH_XE): $(GLSRC)genarch.c $(AK) $(GENARCH_DEPS) $(UNIX_AUX_MAK) $(MAKEDIRS)
 -	$(CCAUX_) $(I_)$(GLSRCDIR)$(_I) $(O_)$(GENARCH_XE) $(GLSRC)genarch.c $(AUXEXTRALIBS)
-+	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/echogs OPENWRT_PGK_BUILD_PATH/obj/aux/genarch
++	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/genarch OPENWRT_PGK_BUILD_PATH/obj/aux/genarch
 
  $(GENCONF_XE): $(GLSRC)genconf.c $(AK) $(GENCONF_DEPS) $(UNIX_AUX_MAK) $(MAKEDIRS)
 -	$(CCAUX_) $(I_)$(GLSRCDIR)$(_I) $(O_)$(GENCONF_XE) $(GLSRC)genconf.c $(AUXEXTRALIBS)
-+	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/echogs OPENWRT_PGK_BUILD_PATH/obj/aux/genconf
++	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/genconf OPENWRT_PGK_BUILD_PATH/obj/aux/genconf
 
  $(GENDEV_XE): $(GLSRC)gendev.c $(AK) $(GENDEV_DEPS) $(UNIX_AUX_MAK) $(MAKEDIRS)
 -	$(CCAUX_) $(I_)$(GLSRCDIR)$(_I) $(O_)$(GENDEV_XE) $(GLSRC)gendev.c $(AUXEXTRALIBS)
-+	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/echogs OPENWRT_PGK_BUILD_PATH/obj/aux/gendev
++	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/gendev OPENWRT_PGK_BUILD_PATH/obj/aux/gendev
 
  $(GENHT_XE): $(GLSRC)genht.c $(AK) $(GENHT_DEPS) $(UNIX_AUX_MAK) $(MAKEDIRS)
 -	$(CCAUX_) $(GENHT_CFLAGS) $(O_)$(GENHT_XE) $(GLSRC)genht.c $(AUXEXTRALIBS)
-+	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/echogs OPENWRT_PGK_BUILD_PATH/obj/aux/genht
++	ln -fs OPENWRT_BASE_BUILD_PATH/obj/aux/genht OPENWRT_PGK_BUILD_PATH/obj/aux/genht
 
  # To get GS to use the system zlib, you remove/hide the gs/zlib directory
  # which means that the mkromfs build can't find the zlib source it needs.
