@@ -23,7 +23,7 @@ define Package/qpdf
   SECTION:=utils
   CATEGORY:=Utilities
   TITLE:=QPDF is a command-line program for transformations on PDF files.
-  DEPENDS:= +libpcre +zlib +libstdcpp
+  DEPENDS:= +libpcre +zlib +libstdcpp +libjpeg
   URL:=http://qpdf.sourceforge.net/
   SUBMENU:=Printing
 endef
