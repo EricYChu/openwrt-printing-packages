@@ -40,6 +40,7 @@ CONFIGURE_ARGS+= \
 	--with-random=/dev/urandom
 
 define Build/Patch
+	$(call Build/Patch/Default)
 	cd $(PKG_BUILD_DIR); sed -i 's|@LIBTOOL@|$$$$(SHELL) $$$$(top_builddir)/libtool --tag=CXX|' autoconf.mk.in
 endef
 
