@@ -1,7 +1,7 @@
-diff --git a/unix-aux.mak b/unix-aux.mak
+diff --git a/base/unix-aux.mak b/base/unix-aux.mak
 index 261ce45..e9a15b9 100644
---- a/unix-aux.mak
-+++ b/unix-aux.mak
+--- a/base/unix-aux.mak
++++ b/base/unix-aux.mak
 @@ -57,24 +57,24 @@ $(AUX)gp_stdia.$(OBJ): $(GLSRC)gp_stdia.c $(AK)\
  # -------------------------- Auxiliary programs --------------------------- #
 
