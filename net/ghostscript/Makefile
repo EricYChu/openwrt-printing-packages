@@ -108,8 +108,8 @@ define Package/ghostscript/install
 	# $(INSTALL_DIR) $(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
 	# $(CP) $(PKG_INSTALL_DIR)/usr/share/ghostscript/$(PKG_VERSION)/examples \
 	# 	$(1)/usr/share/ghostscript/$(PKG_VERSION)/examples
-	$(INSTALL_DIR) $(1)/etc/cups
-	$(INSTALL_DATA) $(PKG_INSTALL_DIR)/etc/cups/gstoraster.convs $(1)/etc/cups
+	# $(INSTALL_DIR) $(1)/etc/cups
+	# $(INSTALL_DATA) $(PKG_INSTALL_DIR)/etc/cups/gstoraster.convs $(1)/etc/cups
 endef
 
 $(eval $(call HostBuild))
