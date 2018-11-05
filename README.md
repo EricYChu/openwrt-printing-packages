@@ -28,7 +28,7 @@ Notably it has:
 - add this line to your `feeds.conf` or `feeds.conf.default`
 
 ```
-src-git cupsprinting git://github.com/lawyiu/openwrt-printing-packages.git
+src-git cupsprinting git://github.com/Sabrewarrior/openwrt-printing-packages
 ```
 
 - to compile everything in this feed you should use the script `setup-buildsystem.sh` or some variation of those commands.
