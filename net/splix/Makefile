@@ -7,7 +7,7 @@ PKG_RELEASE:=1
 PKG_BUILD_DIR:=$(BUILD_DIR)/splix
 PKG_SOURCE:=splix-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=https://pkgs.fedoraproject.org/repo/pkgs/splix/splix-2.0.1.20130902svn.tar.bz2/2901e9482dd1a7c44f7b730696868e09
-PKG_MD5SUM:=2901e9482dd1a7c44f7b730696868e09
+PKG_HASH:=114dca797eef8f0bff3a1455ab2a3c001a73cfdeced83e7595d3c43bcc2079f6
 PKG_CAT:=bzcat
 PKG_INSTALL:=1
 
