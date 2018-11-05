@@ -1,7 +1,6 @@
-diff -Naur ghostscript-9.05.orig/configure ghostscript-9.05/configure
---- ghostscript-9.05.orig/configure	2012-02-13 16:22:33.000000000 -0500
-+++ ghostscript-9.05/configure	2012-02-13 16:23:12.000000000 -0500
-@@ -8879,10 +8879,18 @@
+--- a/configure
++++ b/configure
+@@ -8925,10 +8925,18 @@
  $as_echo_n "checking for big endian... " >&6; }
  
  if test "$cross_compiling" = yes; then :
