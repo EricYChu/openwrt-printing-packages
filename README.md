@@ -6,8 +6,8 @@ for OpenWrt.
 Notably it has:
 - Ghostscript 9.06
 - Gutenprint 5.2.12
-- Cups 1.6.3
-- OpenPrinting's cups-filters 1.14.1
+- Cups 2.2.8
+- OpenPrinting's cups-filters 1.21.3
 - poppler 0.53.0
 - many other packages to make sure the ones above work...
 
@@ -28,7 +28,7 @@ Notably it has:
 - add this line to your `feeds.conf` or `feeds.conf.default`
 
 ```
-src-git printing git://github.com/lawyiu/openwrt-printing-packages.git
+src-git cupsprinting git://github.com/lawyiu/openwrt-printing-packages.git
 ```
 
 - to compile everything in this feed you should use the script `setup-buildsystem.sh` or some variation of those commands.
@@ -42,7 +42,7 @@ scp -r ./bin/$ARCH/packages root@openwrt.lan:/storage/printer/packages/
 - add local package source to the opkg configuration `/etc/opkg.conf` with
 
 ```
-src/gz printing file:/storage/printer/packages
+src/gz cupsprinting file:/storage/printer/packages
 ```
 
 - see `opkg-install-printing-packages.sh` to see a suggestion of what to install.
