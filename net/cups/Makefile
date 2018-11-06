@@ -378,8 +378,8 @@ endef
 
 define Build/Configure
 	$(call Build/Configure/Default, \
-		--with-cups-user="nobody" \
-		--with-cups-group="nogroup" \
+		--with-cups-user="root" \
+		--with-cups-group="root" \
 		--with-system-groups="root" \
 		--with-local_protocols='dnssd' \
 		--enable-default-shared \
