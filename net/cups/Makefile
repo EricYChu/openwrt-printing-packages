@@ -378,8 +378,8 @@ endef
 
 define Build/Configure
 	$(call Build/Configure/Default, \
-		--with-cups-user="root" \
-		--with-cups-group="root" \
+		--with-cups-user="nobody" \
+		--with-cups-group="nogroup" \
 		--with-system-groups="root" \
 		--with-local_protocols='dnssd' \
 		--enable-default-shared \
@@ -402,7 +402,8 @@ define Build/Configure
 		--disable-ssl \
 		--disable-gssapi \
 		--disable-tiff \
-		--with-pdftops=/usr/bin/poppler, \
+		--with-pdftops-path=/usr/bin/poppler \
+		--with-pdftops=pdftops, \
 		UNAME="Linux" \
 		LIBS="$(TARGET_LDFLAGS) -lz -lpng -ljpeg" \
 	)
