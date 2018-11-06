@@ -402,7 +402,7 @@ define Build/Configure
 		--disable-ssl \
 		--disable-gssapi \
 		--disable-tiff \
-		--with-pdftops=/usr/bin/gs, \
+		--with-pdftops=/usr/bin/poppler, \
 		UNAME="Linux" \
 		LIBS="$(TARGET_LDFLAGS) -lz -lpng -ljpeg" \
 	)
